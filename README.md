@@ -7,7 +7,7 @@ Para ello usted es contratado para liderar el desarrollo del programa que debe c
 1. El programa debe permitir a las personas encargadas de procesar las inscripciones
 a el programa; la información que se tiene por cada ***camper*** es la siguiente : 
 
-- # de identificación.
+- Numero de identificación.
 - Nombres.
 - Apellidos.
 - Dirección.
