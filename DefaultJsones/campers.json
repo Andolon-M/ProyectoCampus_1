@@ -1,0 +1,152 @@
+[
+  {
+    "id": 78184,
+    "dniCamper": 7319979,
+    "nombres": "Laura",
+    "apellidos": "Garcia",
+    "direccion": "903 Perez Viaduct Apt. 188\nAdamsbury, AR 20171",
+    "dniAcudiente": 43173627,
+    "telContacto": {
+      "celular": "001-483-738-9985x7873",
+      "fijo": "9513463564"
+    },
+    "estado": false,
+    "riesgo": "Medio",
+    "idRol": 4
+  },
+  {
+    "id": 94075,
+    "dniCamper": 2993416,
+    "nombres": "Megan",
+    "apellidos": "Bowers",
+    "direccion": "USNV Morgan\nFPO AP 08371",
+    "dniAcudiente": 10431451,
+    "telContacto": {
+      "celular": "866-209-3551x01059",
+      "fijo": "3576496654"
+    },
+    "estado": true,
+    "riesgo": "Bajo",
+    "idRol": 6
+  },
+  {
+    "id": 54838,
+    "dniCamper": 56951084,
+    "nombres": "Ashley",
+    "apellidos": "Smith",
+    "direccion": "79847 Harvey Square Apt. 531\nEast Steven, NE 70920",
+    "dniAcudiente": 89042338,
+    "telContacto": {
+      "celular": "863-689-2635",
+      "fijo": "+1-905-392-5957x9782"
+    },
+    "estado": true,
+    "riesgo": "Medio",
+    "idRol": 1
+  },
+  {
+    "id": 91697,
+    "dniCamper": 86986678,
+    "nombres": "Stacy",
+    "apellidos": "Rowe",
+    "direccion": "9553 Smith Plaza Suite 758\nEast Heathermouth, MS 81107",
+    "dniAcudiente": 52796011,
+    "telContacto": {
+      "celular": "(909)458-0723",
+      "fijo": "+1-974-551-2761x9273"
+    },
+    "estado": true,
+    "riesgo": "Medio",
+    "idRol": 0
+  },
+  {
+    "id": 3045,
+    "dniCamper": 67631037,
+    "nombres": "Charles",
+    "apellidos": "Sanders",
+    "direccion": "3769 William Bridge Suite 901\nMatthewburgh, NH 83762",
+    "dniAcudiente": 59023987,
+    "telContacto": {
+      "celular": "955-984-3399x106",
+      "fijo": "(458)975-4781x8130"
+    },
+    "estado": true,
+    "riesgo": "Alto",
+    "idRol": 1
+  },
+  {
+    "id": 32,
+    "dniCamper": 29345208,
+    "nombres": "Mary",
+    "apellidos": "Compton",
+    "direccion": "5919 Lopez Summit Apt. 356\nRodriguezland, HI 22227",
+    "dniAcudiente": 23014207,
+    "telContacto": {
+      "celular": "(254)739-1484x54291",
+      "fijo": "+1-660-561-3966"
+    },
+    "estado": false,
+    "riesgo": "Alto",
+    "idRol": 7
+  },
+  {
+    "id": 57297,
+    "dniCamper": 51909627,
+    "nombres": "Marie",
+    "apellidos": "Jackson",
+    "direccion": "PSC 6158, Box 2945\nAPO AA 49503",
+    "dniAcudiente": 21818811,
+    "telContacto": {
+      "celular": "320.710.3501x7739",
+      "fijo": "754-729-0014"
+    },
+    "estado": true,
+    "riesgo": "Bajo",
+    "idRol": 6
+  },
+  {
+    "id": 25148,
+    "dniCamper": 7601987,
+    "nombres": "Martin",
+    "apellidos": "Williams",
+    "direccion": "746 Kelly Ridges Suite 595\nWest Robert, PW 76826",
+    "dniAcudiente": 67350151,
+    "telContacto": {
+      "celular": "913-201-2503x1194",
+      "fijo": "666.879.6164"
+    },
+    "estado": true,
+    "riesgo": "Medio",
+    "idRol": 0
+  },
+  {
+    "id": 34626,
+    "dniCamper": 26856926,
+    "nombres": "Jessica",
+    "apellidos": "Frank",
+    "direccion": "72261 Holmes Inlet\nLisaville, TX 37145",
+    "dniAcudiente": 6885874,
+    "telContacto": {
+      "celular": "463-434-9856x69278",
+      "fijo": "+1-652-388-5304"
+    },
+    "estado": false,
+    "riesgo": "Bajo",
+    "idRol": 7
+  },
+  {
+    "id": 28732,
+    "dniCamper": 78226311,
+    "nombres": "Christopher",
+    "apellidos": "Hughes",
+    "direccion": "66518 Adams Plaza\nDavidmouth, NC 57333",
+    "dniAcudiente": 62514040,
+    "telContacto": {
+      "celular": "2155283571",
+      "fijo": "395.441.1686x463"
+    },
+    "estado": true,
+    "riesgo": "Bajo",
+    "idRol": 5
+  }
+]

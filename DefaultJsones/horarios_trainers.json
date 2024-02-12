@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "idTrainer": 1,
+    "horaInicio": "20:32",
+    "horaFin": "23:57"
+  },
+  {
+    "id": 2,
+    "idTrainer": 2,
+    "horaInicio": "15:48",
+    "horaFin": "12:51"
+  },
+  {
+    "id": 3,
+    "idTrainer": 3,
+    "horaInicio": "06:07",
+    "horaFin": "16:58"
+  },
+  {
+    "id": 4,
+    "idTrainer": 4,
+    "horaInicio": "08:38",
+    "horaFin": "18:58"
+  },
+  {
+    "id": 5,
+    "idTrainer": 5,
+    "horaInicio": "22:31",
+    "horaFin": "20:10"
+  }
+]

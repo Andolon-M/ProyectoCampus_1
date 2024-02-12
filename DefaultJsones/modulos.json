@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "nombreModulo": "Fundamentos de programaci\u00f3n",
+    "detalles": [
+      "Introducci\u00f3n a la algoritmia",
+      "PSeInt",
+      "Python"
+    ]
+  },
+  {
+    "id": 2,
+    "nombreModulo": "Programaci\u00f3n Web",
+    "detalles": [
+      "HTML",
+      "CSS",
+      "Bootstrap"
+    ]
+  },
+  {
+    "id": 3,
+    "nombreModulo": "Programaci\u00f3n formal",
+    "detalles": [
+      "Java",
+      "JavaScript",
+      "C#"
+    ]
+  },
+  {
+    "id": 4,
+    "nombreModulo": "Bases de datos",
+    "detalles": [
+      "Mysql",
+      "MongoDb",
+      "Postgresql"
+    ]
+  },
+  {
+    "id": 5,
+    "nombreModulo": "Backend",
+    "detalles": [
+      "NetCore",
+      "Spring Boot",
+      "NodeJS",
+      "Express"
+    ]
+  }
+]
