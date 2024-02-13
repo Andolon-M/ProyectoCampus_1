@@ -1,239 +1,115 @@
+
 import json
-from faker import Faker
-import random
-from datetime import datetime
 import os
+import Login as auth
 
 # Crear el directorio si no existe
-if not os.path.exists('DefaultJsones'):
-    os.makedirs('DefaultJsones')
-
-fake = Faker()
-
-# Lista para almacenar los campers generados
-campers = []
-
-# Generar 10 campers
-for _ in range(10):
-    camper = {
-        "id": fake.random_number(digits=5),
-        "dniCamper": fake.random_number(digits=8),
-        "nombres": fake.first_name(),
-        "apellidos": fake.last_name(),
-        "direccion": fake.address(),
-        "dniAcudiente": fake.random_number(digits=8),
-        "telContacto": {
-            "celular": fake.phone_number(),
-            "fijo": fake.phone_number()
-        },
-        "estado": random.choice([True, False]),
-        "riesgo": fake.random_element(elements=("Bajo", "Medio", "Alto")),
-        "idRol": fake.random_number(digits=1)
-    }
-    campers.append(camper)
-
-# Escribir los campers en un archivo JSON
-with open('DefaultJsones/campers.json', 'w') as f:
-    json.dump(campers, f, indent=2)
-
-print("Los datos de los campers han sido guardados en el archivo campers.json.")
+if not os.path.exists('DefaultJsons'):
+    os.makedirs('DefaultJsons')
 
 
-# Lista de módulos con sus respectivos detalles
-modulos = [
-    {"id": 1, "nombreModulo": "Fundamentos de programación", "detalles": ["Introducción a la algoritmia", "PSeInt", "Python"]},
-    {"id": 2, "nombreModulo": "Programación Web", "detalles": ["HTML", "CSS", "Bootstrap"]},
-    {"id": 3, "nombreModulo": "Programación formal", "detalles": ["Java", "JavaScript", "C#"]},
-    {"id": 4, "nombreModulo": "Bases de datos", "detalles": ["Mysql", "MongoDb", "Postgresql"]},
-    {"id": 5, "nombreModulo": "Backend", "detalles": ["NetCore", "Spring Boot", "NodeJS", "Express"]}
+# Datos para las tablas principales
+grupo_camper_data = [
+    {"id": 1, "nombreGrupo": "Grupo1"},
+    {"id": 2, "nombreGrupo": "Grupo2"}
 ]
 
-# Convertir la lista de módulos a formato JSON
-json_modulos = json.dumps(modulos, indent=2)
-
-# Guardar el JSON en un archivo
-with open('DefaultJsones/modulos.json', 'w') as f:
-    f.write(json_modulos)
-
-print("El archivo modulos.json ha sido creado exitosamente con la información de los módulos.")
-
-
-# Lista de roles
-roles = [
-    {"id": 1, "name": "Camper"},
-    {"id": 2, "name": "Trainer"},
-    {"id": 3, "name": "Coordinador"}
+camper_data = [
+    {"id": 1, "dni": "12345678A", "nombres": "Juan", "apellidos": "Perez", "direccion": "Calle 123", "dniAcudiente": "87654321B", "celular": "123456789", "fijo": "987654321", "estado": "Inscrito", "riesgo": "Bajo", "idGrupo": 1},
+    {"id": 2, "dni": "23456789B", "nombres": "Maria", "apellidos": "Gomez", "direccion": "Avenida 456", "dniAcudiente": "76543210C", "celular": "987654321", "fijo": "123456789", "estado": "Inscrito", "riesgo": "Medio", "idGrupo": 2}
 ]
 
-# Convertir la lista de roles a formato JSON
-json_roles = json.dumps(roles, indent=2)
-
-# Guardar el JSON en un archivo
-with open('DefaultJsones/roles.json', 'w') as f:
-    f.write(json_roles)
-
-print("El archivo roles.json ha sido creado exitosamente con la información de roles.")
-
-
-# Definir la información de las rutas de entrenamiento
-rutas_entrenamiento = [
-    {
-        "id": 1,
-        "nombreRuta": "NodeJS",
-        "capacidad": 34,
-        "duracionClase": "4 horas",
-        "HoraInicio": "14:00",
-        "HoraFin": "17:30"
-    },
-    {
-        "id": 2,
-        "nombreRuta": "Java",
-        "capacidad": 34,
-        "duracionClase": "4 horas",
-        "HoraInicio": "18:00",
-        "HoraFin": "22:00"
-    },
-    {
-        "id": 3,
-        "nombreRuta": "NetCore",
-        "capacidad": 34,
-        "duracionClase": "4 horas",
-        "HoraInicio": "18:00",
-        "HoraFin": "22:00"
-    }
+trainer_data = [
+    {"id": 1, "dni": "34567890C", "nombres": "Pedro", "apellidos": "Lopez"},
+    {"id": 2, "dni": "45678901D", "nombres": "Ana", "apellidos": "Martinez"}
 ]
 
-# Escribir la información de las rutas en un archivo JSON
-with open('DefaultJsones/rutas_entrenamiento.json', 'w') as f:
-    json.dump(rutas_entrenamiento, f, indent=2)
-
-print("La información de las rutas de entrenamiento ha sido guardada en el archivo rutas_entrenamiento.json.")
-
-
-# Crear el diccionario con la información del coordinador
-coordinador = {
-    "id": 1,
-    "dniCoordinador": "123456789A",
-    "nombre": "Juan Pérez"
-}
-
-# Convertir el diccionario a formato JSON
-json_coordinador = json.dumps(coordinador, indent=2)
-
-# Guardar el JSON en un archivo
-with open('DefaultJsones/coordinador.json', 'w') as f:
-    f.write(json_coordinador)
-
-print("El archivo coordinador.json ha sido creado exitosamente con la información del coordinador.")
-
-
-fake = Faker()
-
-# Generar información para 5 trainers
-trainers = []
-for i in range(1, 6):
-    trainer = {
-        "id": i,
-        "dniTrainer": fake.random_number(digits=8),
-        "nombreTrainer": fake.name(),
-        "idRol": 2  # Suponiendo que el id del rol para Trainer es 2
-    }
-    trainers.append(trainer)
-
-# Convertir la lista de trainers a formato JSON
-json_trainers = json.dumps(trainers, indent=2)
-
-# Guardar el JSON de trainers en un archivo
-with open('DefaultJsones/trainers.json', 'w') as f:
-    f.write(json_trainers)
-
-print("El archivo trainers.json ha sido creado exitosamente con la información de los trainers.")
-
-# Generar información de horarios disponibles para 5 trainers
-horarios_trainers = []
-for i in range(1, 6):
-    horario = {
-        "id": i,
-        "idTrainer": i,
-        "horaInicio": fake.time(pattern="%H:%M"),
-        "horaFin": fake.time(pattern="%H:%M")
-    }
-    horarios_trainers.append(horario)
-
-# Convertir la lista de horarios de trainers a formato JSON
-json_horarios_trainers = json.dumps(horarios_trainers, indent=2)
-
-# Guardar el JSON de horarios de trainers en un archivo
-with open('DefaultJsones/horarios_trainers.json', 'w') as f:
-    f.write(json_horarios_trainers)
-
-print("El archivo horarios_trainers.json ha sido creado exitosamente con la información de los horarios disponibles de los trainers.")
-
-
-
-# Lista de salones con sus respectivos nombres
-salones = [
-    {"id": 1, "nombre": "Sputnik"},
-    {"id": 2, "nombre": "Apolo"},
-    {"id": 3, "nombre": "Artemis"},
-    {"id": 4, "nombre": "Kylab"},
-    {"id": 5, "nombre": "Cosmos"},
-    {"id": 6, "nombre": "Kepler"},
-    {"id": 7, "nombre": "Auditorio"}
+roles_data = [
+    {"id": 1, "nombreRol": "Camper"},
+    {"id": 2, "nombreRol": "Trainer"}
 ]
 
-# Convertir la lista de salones a formato JSON
-json_salones = json.dumps(salones, indent=2)
+ruta_entrenamiento_data = [
+    {"id": 1, "nombreRuta": "Ruta1"},
+    {"id": 2, "nombreRuta": "Ruta2"}
+]
 
-# Guardar el JSON en un archivo
-with open('DefaultJsones/salones.json', 'w') as f:
-    f.write(json_salones)
+modulo_data = [
+    {"id": 1, "nombreModulo": "Modulo1", "detalles": "Detalles del Modulo 1", "estado": "Activo", "idRutaEntrenamiento": 1},
+    {"id": 2, "nombreModulo": "Modulo2", "detalles": "Detalles del Modulo 2", "estado": "Activo", "idRutaEntrenamiento": 2}
+]
 
-print("El archivo salones.json ha sido creado exitosamente con la información de los salones.")
+matricula_data = [
+    {"id": 1, "idCamper": 1, "idTrainer": 1, "idGrupo": 1, "idRutaEntrenamiento": 1, "fechaInicio": "2024-02-01", "fechaFin": "2024-03-01", "idSalon": 1},
+    {"id": 2, "idCamper": 2, "idTrainer": 2, "idGrupo": 2, "idRutaEntrenamiento": 2, "fechaInicio": "2024-02-15", "fechaFin": "2024-03-15", "idSalon": 2}
+]
+
+salon_data = [
+    {"id": 1, "nombre": "Salon1"},
+    {"id": 2, "nombre": "Salon2"}
+]
+
+# Datos para las tablas de relación
+modulo_en_ruta_data = [
+    {"id": 1, "idModulo": 1, "idRutaEntrenamiento": 1},
+    {"id": 2, "idModulo": 2, "idRutaEntrenamiento": 2}
+]
+
+nota_modulo_data = [
+    {"id": 1, "idMatricula": 1, "idModulo": 1, "notaFinal": 85},
+    {"id": 2, "idMatricula": 2, "idModulo": 2, "notaFinal": 90}
+]
+
+# Guardar datos en archivos JSON separados
+def guardar_json(data, filename):
+    with open(filename, 'w') as f:
+        json.dump(data, f, indent=4)
+
+guardar_json(grupo_camper_data, 'DefaultJsons/grupo_camper.json')
+guardar_json(camper_data, 'DefaultJsons/camper.json')
+guardar_json(trainer_data, 'DefaultJsons/trainer.json')
+guardar_json(roles_data, 'DefaultJsons/roles.json')
+guardar_json(ruta_entrenamiento_data, 'DefaultJsons/ruta_entrenamiento.json')
+guardar_json(modulo_data, 'DefaultJsons/modulo.json')
+guardar_json(matricula_data, 'DefaultJsons/matricula.json')
+guardar_json(salon_data, 'DefaultJsons/salon.json')
+guardar_json(modulo_en_ruta_data, 'DefaultJsons/modulo_en_ruta.json')
+guardar_json(nota_modulo_data, 'DefaultJsons/nota_modulo.json')
+
+print("Archivos JSON generados correctamente.")
 
 
-
-# Generar información de matrículas para 10 campers
-matriculas = []
-for camper_id in range(1, 11):
-    # Seleccionar aleatoriamente una ruta de entrenamiento para el camper
-    ruta_entrenamiento = random.choice(rutas_entrenamiento)
-    
-    matricula = {
-        "id": camper_id,
-        "idCamper": camper_id,
-        "idTrainer": random.randint(1, 5),  # Suponiendo que hay 5 trainers en total
-        "idRutaEntrenamiento": ruta_entrenamiento["id"],
-        "fechaInicio": fake.date_this_year().strftime('%Y-%m-%d'),
-        "fechaFin": fake.date_this_year().strftime('%Y-%m-%d'),
-        "salon": fake.random_element(elements=("Sputnik", "Apolo", "Artemis", "Kylab", "Cosmos", "Kepler", "Auditorio"))
-    }
-    matriculas.append(matricula)
-
-# Convertir la lista de matrículas a formato JSON
-json_matriculas = json.dumps(matriculas, indent=2)
-
-# Guardar el JSON en un archivo
-with open('DefaultJsones/matriculas.json', 'w') as f:
-    f.write(json_matriculas)
-
-print("El archivo matriculas.json ha sido creado exitosamente con la información de las matrículas.")
-
-
-
+usuarios =[]
+#crear contraseña admin encriptada
+clave = "admin"
+claveEncriptada = auth.encriptar_contraseña(clave)
 # Crear el diccionario con la información del usuario
-usuario = {
+usuarios = [
+    {
     "id": 1,
-    "usuario": "nombre_usuario",
-    "contraseña": "contraseña_segura",
+    "usuario": "admin",
+    "clave": claveEncriptada,
+    "dni": "123456789"
+    },
+    {
+    "id": 2,
+    "usuario": "andolon",
+    "clave": claveEncriptada,
     "dni": ""
-}
+    },
+    {
+    "id": 3,
+    "usuario": "juanperez",
+    "clave": claveEncriptada,
+    "dni": ""
+    }
+    ]
 
 # Convertir el diccionario a formato JSON
-json_usuario = json.dumps(usuario, indent=2)
+json_usuario = json.dumps(usuarios, indent=2)
 
 # Guardar el JSON en un archivo
-with open('DefaultJsones/usuario.json', 'w') as f:
+with open('DefaultJsons/usuario.json', 'w') as f:
     f.write(json_usuario)
 
 print("El archivo usuario.json ha sido creado exitosamente con la información del usuario.")

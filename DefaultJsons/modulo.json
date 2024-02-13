@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nombreModulo": "Modulo1",
+        "detalles": "Detalles del Modulo 1",
+        "estado": "Activo",
+        "idRutaEntrenamiento": 1
+    },
+    {
+        "id": 2,
+        "nombreModulo": "Modulo2",
+        "detalles": "Detalles del Modulo 2",
+        "estado": "Activo",
+        "idRutaEntrenamiento": 2
+    }
+]

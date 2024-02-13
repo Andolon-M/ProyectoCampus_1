@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "idMatricula": 1,
+        "idModulo": 1,
+        "notaFinal": 85
+    },
+    {
+        "id": 2,
+        "idMatricula": 2,
+        "idModulo": 2,
+        "notaFinal": 90
+    }
+]
