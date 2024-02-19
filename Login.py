@@ -1,8 +1,7 @@
 import json
 import getpass
 import hashlib
-
-
+import funciones
 def login():
     try:
         # Abrir el archivo JSON de usuarios en modo lectura
@@ -11,7 +10,10 @@ def login():
             users = json.load(usuarios_json)
             
         print("\nInicio de Sesion")
-        usuarioIn = input("Usuario: ")
+        usuarioIn = input("Usuario: ")                  
+        if funciones.salir(usuarioIn):
+            usuarioIn = "salir"
+            return usuarioIn
         
         # Verifica si el usuario existe en los datos del archivo JSON
         for usuario in users:

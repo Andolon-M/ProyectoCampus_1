@@ -1,10 +1,14 @@
 [
     {
         "id": 1,
-        "nombreRol": "Camper"
+        "nombreRol": "Coordinador"
     },
     {
         "id": 2,
         "nombreRol": "Trainer"
+    },
+    {
+        "id": 3,
+        "nombreRol": "Camper"
     }
 ]

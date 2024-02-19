@@ -1,10 +1,82 @@
 [
     {
         "id": 1,
-        "nombreGrupo": "Grupo1"
+        "nombreGrupo": "S4",
+        "capacidad": 34,
+        "idSalon": "",
+        "horaInicio": "18:00",
+        "horaFin": "21:00",
+        "idTrainer": "7",
+        "integrantes": []
     },
     {
         "id": 2,
-        "nombreGrupo": "Grupo2"
+        "nombreGrupo": "U3",
+        "capacidad": 34,
+        "idSalon": "",
+        "horaInicio": "18:00",
+        "horaFin": "21:00",
+        "idTrainer": "8",
+        "integrantes": []
+    },
+    {
+        "id": 3,
+        "nombreGrupo": "Y3",
+        "capacidad": 34,
+        "idSalon": "",
+        "horaInicio": "18:00",
+        "horaFin": "21:00",
+        "idTrainer": "11",
+        "integrantes": []
+    },
+    {
+        "id": 4,
+        "nombreGrupo": "S3",
+        "capacidad": 34,
+        "idSalon": "",
+        "horaInicio": "18:00",
+        "horaFin": "21:00",
+        "idTrainer": "",
+        "integrantes": []
+    },
+    {
+        "id": 5,
+        "nombreGrupo": "U2",
+        "capacidad": "36",
+        "idSalon": "",
+        "horaInicio": "18:00",
+        "horaFin": "21:00",
+        "idTrainer": "",
+        "integrantes": []
+    },
+    {
+        "id": 6,
+        "nombreGrupo": "Y2",
+        "capacidad": 34,
+        "idSalon": "",
+        "horaInicio": "18:00",
+        "horaFin": "21:00",
+        "idTrainer": "",
+        "integrantes": []
+    },
+    {
+        "id": 7,
+        "nombreGrupo": "S2",
+        "capacidad": 34,
+        "idSalon": "",
+        "horaInicio": "18:00",
+        "horaFin": "21:00",
+        "idTrainer": "",
+        "integrantes": []
+    },
+    {
+        "id": 8,
+        "nombreGrupo": "U1",
+        "capacidad": 34,
+        "idSalon": "",
+        "horaInicio": "18:00",
+        "horaFin": "21:00",
+        "idTrainer": "",
+        "integrantes": []
     }
 ]

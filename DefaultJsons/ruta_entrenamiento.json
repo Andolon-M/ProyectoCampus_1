@@ -1,10 +1,185 @@
 [
     {
         "id": 1,
-        "nombreRuta": "Ruta1"
+        "nombreRuta": "NodeJS",
+        "modulos": [
+            {
+                "id": 1,
+                "nombre": "Fundamentos de programacio\u0301n",
+                "description": [
+                    "Introduccio\u0301n a la algoritmia,",
+                    "PSeInt",
+                    "Python"
+                ],
+                "notaFinal": 0,
+                "notas": []
+            },
+            {
+                "id": 2,
+                "nombre": "Programacio\u0301n Web",
+                "description": [
+                    "HTML",
+                    "CSS ",
+                    "Bootstrap"
+                ],
+                "notaFinal": 0,
+                "notas": []
+            },
+            {
+                "id": 3,
+                "nombre": "Programacio\u0301n forma",
+                "description": [
+                    "Java",
+                    "JavaScript ",
+                    "C#"
+                ],
+                "notaFinal": 0,
+                "notas": []
+            },
+            {
+                "id": 4,
+                "nombre": "Bases de datos",
+                "description": {
+                    "SGDB Principal": "MongoDb",
+                    "SGDB Secundario": "Postgresql"
+                },
+                "notaFinal": 0,
+                "notas": []
+            },
+            {
+                "id": 5,
+                "nombre": "Backend",
+                "description": [
+                    "NetCore",
+                    "Spring Boot ",
+                    "NodeJS ",
+                    "Express"
+                ],
+                "notaFinal": 0,
+                "notas": []
+            }
+        ]
     },
     {
         "id": 2,
-        "nombreRuta": "Ruta2"
+        "nombreRuta": "Java",
+        "modulos": [
+            {
+                "id": 1,
+                "nombre": "Fundamentos de programacio\u0301n",
+                "description": [
+                    "Introduccio\u0301n a la algoritmia,",
+                    "PSeInt",
+                    "Python"
+                ],
+                "notaFinal": 0,
+                "notas": []
+            },
+            {
+                "id": 2,
+                "nombre": "Programacio\u0301n Web",
+                "description": [
+                    "HTML",
+                    "CSS ",
+                    "Bootstrap"
+                ],
+                "notaFinal": 0,
+                "notas": []
+            },
+            {
+                "id": 3,
+                "nombre": "Programacio\u0301n forma",
+                "description": [
+                    "Java",
+                    "JavaScript ",
+                    "C#"
+                ],
+                "notaFinal": 0,
+                "notas": []
+            },
+            {
+                "id": 4,
+                "nombre": "Bases de datos",
+                "description": {
+                    "SGDB Principal": "MongoDb",
+                    "SGDB Secundario": "Postgresql"
+                },
+                "notaFinal": 0,
+                "notas": []
+            },
+            {
+                "id": 5,
+                "nombre": "Backend",
+                "description": [
+                    "NetCore",
+                    "Spring Boot ",
+                    "NodeJS ",
+                    "Express"
+                ],
+                "notaFinal": 0,
+                "notas": []
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "nombreRuta": "NetCore",
+        "modulos": [
+            {
+                "id": 1,
+                "nombre": "Fundamentos de programacio\u0301n",
+                "description": [
+                    "Introduccio\u0301n a la algoritmia,",
+                    "PSeInt",
+                    "Python"
+                ],
+                "notaFinal": 0,
+                "notas": []
+            },
+            {
+                "id": 2,
+                "nombre": "Programacio\u0301n Web",
+                "description": [
+                    "HTML",
+                    "CSS ",
+                    "Bootstrap"
+                ],
+                "notaFinal": 0,
+                "notas": []
+            },
+            {
+                "id": 3,
+                "nombre": "Programacio\u0301n forma",
+                "description": [
+                    "Java",
+                    "JavaScript ",
+                    "C#"
+                ],
+                "notaFinal": 0,
+                "notas": []
+            },
+            {
+                "id": 4,
+                "nombre": "Bases de datos",
+                "description": {
+                    "SGDB Principal": "MongoDb",
+                    "SGDB Secundario": "Postgresql"
+                },
+                "notaFinal": 0,
+                "notas": []
+            },
+            {
+                "id": 5,
+                "nombre": "Backend",
+                "description": [
+                    "NetCore",
+                    "Spring Boot ",
+                    "NodeJS ",
+                    "Express"
+                ],
+                "notaFinal": 0,
+                "notas": []
+            }
+        ]
     }
 ]

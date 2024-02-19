@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Auditorio"
+    },
+    {
+        "id": 2,
+        "nombre": "Apolo"
+    },
+    {
+        "id": 3,
+        "nombre": "Artemis"
+    },
+    {
+        "id": 4,
+        "nombre": "Kepler"
+    },
+    {
+        "id": 5,
+        "nombre": "Skilab"
+    },
+    {
+        "id": 6,
+        "nombre": "Cosmos"
+    },
+    {
+        "id": 7,
+        "nombre": "Skilab"
+    }
+]

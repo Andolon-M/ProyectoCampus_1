@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "dni": 21512644,
+        "nombres": "Ruth",
+        "apellidos": "Marshall",
+        "horario": []
+    },
+    {
+        "id": 2,
+        "dni": 42038814,
+        "nombres": "Jeremy",
+        "apellidos": "Harvey",
+        "horario": []
+    },
+    {
+        "id": 3,
+        "dni": 28131550,
+        "nombres": "Aaron",
+        "apellidos": "Carlson",
+        "horario": []
+    },
+    {
+        "id": 4,
+        "dni": 54590033,
+        "nombres": "John",
+        "apellidos": "Johnson",
+        "horario": []
+    },
+    {
+        "id": 5,
+        "dni": 72888460,
+        "nombres": "Eric",
+        "apellidos": "Stewart",
+        "horario": [
+            "18:00-22:00"
+        ]
+    },
+    {
+        "id": 6,
+        "dni": 13192828,
+        "nombres": "Katie",
+        "apellidos": "Rodgers",
+        "horario": []
+    },
+    {
+        "id": 7,
+        "dni": 70071412,
+        "nombres": "Benjamin",
+        "apellidos": "Ward",
+        "horario": [
+            "18:00-21:00"
+        ]
+    },
+    {
+        "id": 11,
+        "dni": "222554477",
+        "nombres": "Andolon",
+        "apellidos": "Mendez",
+        "horario": []
+    }
+]
