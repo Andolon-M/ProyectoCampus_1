@@ -6,6 +6,11 @@ import time
 # Nombre del archivo JSON
 archivo_json = 'DefaultJsons/coordinadores.json'
 
+def retronarCoordinadores():
+    # Leer datos existentes desde el archivo JSON
+    datos = data.leer_json(archivo_json)
+    return datos  
+
 #agregar coordinadores
 def agregarcoordinador(coordinador):
     # Leer datos existentes desde el archivo JSON

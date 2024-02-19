@@ -7,30 +7,38 @@ from GestionDeRecursos import GestiondeRecursos
 from GestionAcademica import GestionAcademica
 def mostrar_menu(auth_data):
     while True:
-            funciones.limpiar_consola() 
-            print(f"\nBienvenido {auth_data['usuario']}, \nMENU PRINCIPAL")
-            print("1. Gestión de personal")
-            print("2. Gestión de recursos")
-            print("3. Gestión académica")
-            print("4. Reportes")
-            print("5. SALIR")
-            opcion = input("\n---------Ingrese una opción: ")
-            
-            if opcion == "1":
+        funciones.limpiar_consola() 
+        print(f"\nBienvenido {auth_data['usuario']}, \nMENU PRINCIPAL")
+        print("1. Gestión de personal")
+        print("2. Gestión de recursos")
+        print("3. Gestión académica")
+        print("4. Reportes")
+        print("5. SALIR")
+        opcion = input("\n---------Ingrese una opción: ")
+        
+        if opcion == "1":
+            if auth_data["rol"] == "coordinador":
                 GestiondePersonal.menu()
-            elif opcion == "2":
-                GestiondeRecursos.menu()
-            elif opcion == "3":
-                GestionAcademica.menu()
-                pass
-            elif opcion == "4":
-                print("Lo siento, esta opción aún no está disponible")
-            elif opcion == "5":
-                auth_data = None
-                break
             else:
-                print("Ingrese una opción válida")
-            time.sleep(2)
+                print("Acceso denegado: No tiene permiso para esta opción.")
+        elif opcion == "2":
+            if auth_data["rol"] == "coordinador":
+                GestiondeRecursos.menu()
+            else:
+                print("Acceso denegado: No tiene permiso para esta opción.")
+        elif opcion == "3":
+            GestionAcademica.menu(auth_data)
+        elif opcion == "4":
+            if auth_data["rol"] == "coordinador":
+                GestionAcademica.menu()
+            else:
+                print("Acceso denegado: No tiene permiso para esta opción.")
+        elif opcion == "5":
+            auth_data = None
+            break
+        else:
+            print("Ingrese una opción válida")
+        time.sleep(2)
 
 sesion = False
 

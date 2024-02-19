@@ -2,6 +2,9 @@ import json
 import getpass
 import hashlib
 import funciones
+from GestionDePersonal.Campers import ControllerCampers
+from GestionDePersonal.Coordinadores import ControllerCoordinadores
+from GestionDePersonal.Trainers import ControllerTrainers
 def login():
     try:
         # Abrir el archivo JSON de usuarios en modo lectura
@@ -14,7 +17,10 @@ def login():
         if funciones.salir(usuarioIn):
             usuarioIn = "salir"
             return usuarioIn
-        
+        campers = ControllerCampers.retornarCamper()
+        trainers = ControllerTrainers.retornarTrainers()
+        coordinadores = ControllerCoordinadores.retronarCoordinadores()
+        campers = ControllerCampers.retornarCamper()
         # Verifica si el usuario existe en los datos del archivo JSON
         for usuario in users:
             if usuarioIn == usuario["usuario"]:
@@ -23,7 +29,26 @@ def login():
                 # Verifica si la contraseña coincide
                 if claveIncriptada == usuario["clave"]:
                     print("Inicio de sesión exitoso")
-                    return usuario  # Devuelve todos los datos del usuario autenticado
+                    
+                    for camper in campers:
+                        if usuario["dni"] == camper["dni"]:
+                            usuario["rol"] = "camper"
+                            print("Inicio de sesión exitoso")
+                            return usuario  # Devuelve todos los datos del usuario autenticado
+
+                    for trainer in trainers:
+                        if usuario["dni"] == trainer["dni"]:
+                            usuario["rol"] = "trainer"
+                            print("Inicio de sesión exitoso")
+                            return usuario  # Devuelve todos los datos del usuario autenticado
+
+                    for coordinador in coordinadores:
+                        if usuario["dni"] == coordinador["dni"]:
+                            usuario["rol"] = "coordinador"
+                            print("Inicio de sesión exitoso")
+                            return usuario  # Devuelve todos los datos del usuario autenticado
+                    
+                    
                 else:
                     print("\nLa contraseña ingresada es incorrecta")
                     return None

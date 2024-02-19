@@ -7,6 +7,11 @@ import time
 # Nombre del archivo JSON
 archivo_json = 'DefaultJsons/campers.json'
 
+def retornarCamper():
+    # Leer datos existentes desde el archivo JSON
+    datos = data.leer_json(archivo_json)
+    return datos
+
 #agregar campers
 def agregarCamper(camper):
     # Leer datos existentes desde el archivo JSON

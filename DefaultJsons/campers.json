@@ -3846,7 +3846,7 @@
                             "PSeInt",
                             "Python"
                         ],
-                        "notaFinal": 0,
+                        "notaFinal": 75.0,
                         "notas": []
                     },
                     {
@@ -3857,8 +3857,12 @@
                             "CSS ",
                             "Bootstrap"
                         ],
-                        "notaFinal": 0,
-                        "notas": []
+                        "notaFinal": 85.0,
+                        "notas": [
+                            70.0,
+                            90.0,
+                            100.0
+                        ]
                     },
                     {
                         "id": 3,
